@@ -17,13 +17,19 @@ defmodule Fast64.MixProject do
 
   def project do
     [
-      app: :fast_64,
-      version: "0.1.0",
+      app: :fast64,
+      version: "0.1.1",
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
       compilers: [:fast64] ++ Mix.compilers(),
+      description: description(),
+      package: package(),
       deps: deps()
     ]
+  end
+
+  defp description() do
+    "High performance Elixir base 64 encoder/decoder in C."
   end
 
   # Run "mix help compile.app" to learn about applications.
@@ -36,9 +42,7 @@ defmodule Fast64.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      # {:dep_from_hexpm, "~> 0.3.0"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]
   end
 
@@ -46,7 +50,7 @@ defmodule Fast64.MixProject do
     [
       maintainers: ["Daniel Bustamante Ospina"],
       licenses: ["Apache-2.0"],
-      links: %{"GitHub" => "https://github.com/dbuos/tellurium"}
+      links: %{"GitHub" => "https://github.com/bancolombia/fast64_elixir"}
     ]
   end
 
