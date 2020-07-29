@@ -11,7 +11,7 @@ by adding `fast64` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:fast64, "~> 0.1.1"}
+    {:fast64, "~> 0.1.2"}
   ]
 end
 
