@@ -18,7 +18,7 @@ defmodule Fast64.MixProject do
   def project do
     [
       app: :fast64,
-      version: "0.1.1",
+      version: "0.1.2",
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
       compilers: [:fast64] ++ Mix.compilers(),
@@ -50,7 +50,8 @@ defmodule Fast64.MixProject do
     [
       maintainers: ["Daniel Bustamante Ospina"],
       licenses: ["Apache-2.0"],
-      links: %{"GitHub" => "https://github.com/bancolombia/fast64_elixir"}
+      links: %{"GitHub" => "https://github.com/bancolombia/fast64_elixir"},
+      files: ["lib", "priv/.gitignore", "mix.exs", "README.md",  "src"]
     ]
   end
 
