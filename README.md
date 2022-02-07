@@ -1,4 +1,5 @@
 # Fast64
+[![Scorecards supply-chain security](https://github.com/bancolombia/fast64_elixir/actions/workflows/scorecards-analysis.yml/badge.svg)](https://github.com/bancolombia/fast64_elixir/actions/workflows/scorecards-analysis.yml)
 
 High performance Elixir base64 encoder/decoder in C
 20x faster than Elixir default implementation.
